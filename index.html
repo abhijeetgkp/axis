@@ -1,0 +1,424 @@
+<html>
+<title>
+Welcome to Axis Bank Site demo..
+</title>
+<head>
+<link rel="icon" href="images/logo.png" type="images/png" sizes="16x16">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+<style>
+.mySlides {display:none;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 200%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #ae285d;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 130px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #fff;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+
+</style>
+
+
+</head>
+<body style="overflow-x: hidden;">
+<!-- Nav Bar -->
+<table  align="center" style="border-width: 1px; -webkit-box-shadow: 2px 2px 21px Silver;">
+<tr><td>
+
+
+  
+   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+<ul class="nav navbar-nav">
+    <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+      <li class="active"><a href="#">Explore Products</a></li>
+      <li><a href="#">Grab Details</a></li>
+      <li><a href="#">Make Payments</a></li>
+      <li><a href="#">Bank Smart</a></li>
+	   <li><a href="#">Apply Now</a></li>
+      <li><a href="#">Get Axis ASAP</a></li>
+	  <li><button class="btn btn-primary">Login</button></li>
+    </ul>
+  </div>
+</nav>
+</td></tr>
+</table>
+<br>
+<!-- Image Slider -->
+<div class="w3-content w3-section" style="width:100%">
+  <img class="mySlides" src="images/slider3.jpg" style="width:100%; height:300px;">
+  <img class="mySlides" src="images/slider2.jpg" style="width:100%; height:300px;">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<h1><b>Products</b> to meet your life goals</h1>
+<div class="row">
+  <div class="column" style="background-color:#fff;">
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/icon1.png" alt="Avatar" style="width:100px;height:100px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Saving Accounts</h1> 
+      
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="column" style="background-color:#fff;">
+     <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/icon2.png" alt="Avatar" style="width:100px;height:100px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Credit cards</h1> 
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="column" style="background-color:#fff;">
+     <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/icon3.png" alt="Avatar" style="width:100px;height:100px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Fixed Deposits</h1> 
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="column" style="background-color:#fff;">
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/icon4.png" alt="Avatar" style="width:100px;height:100px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Personal Loan</h1> 
+    </div>
+  </div>
+</div>
+  </div>
+  <center><button class="btn btn-warning">View More</button></center>
+</div>
+
+<h1>Deals That Will <b>Interest You</b></h1>
+<div class="columns">
+  <ul class="price">
+    <li class=""><img src="images/flipkart-banner.jpg"></li>
+    <li class="grey">ADDITIONAL 5% Off ON AXIS BUZZ CARDS</li>
+    <li class="grey"><a href="#" class="button">Know More</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="" ><img src="images/myles.jpg"></li>
+    <li class="grey">10% CASHBACK ON CC-EMI TRANSACTIONS</li>
+    <li class="grey"><a href="#" class="button">Know More</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class=""><img src="images/iphone.jpg"></li>
+    <li class="grey">20% OFF UPTO RS 1000 ON AXIS BANK CREDIT &DEBIT CARDS</li>
+    <li class="grey"><a href="#" class="button">Know More</a></li>
+  </ul>
+</div>
+<center><button class="btn btn-warning">View More</button></center>
+<br><br>
+<div class="columns">
+  <ul class="price">
+    <li class=""><font size="5px"><b>Calculate</b> with Ease</font></li>
+    <li class="grey"><img src="images/img_calculate_easy.jpg"></li>
+    <h5>Car Loan EMI Calculator</h5>
+    <h5>Personal Loan EMI Calculator</h5>
+    <h5>Home Loan EMI Calculator</h5>
+    <h5>Education Loan Calculator</h5>
+    <a href="#">View More</a>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class=""><font size="5px"><b>Progress with us</b> Blog</font></li>
+    <li class="grey"><img src="images/yogi.jpg"></li>
+   <h3>Here’s A Smart Way to Reduce the Interest Outgo of Your Home Loan</h3><br>
+If you are looking at saving on the interest cost while you aspire to purchase, construct, or even renovate your dream home on a loan
+    <a href="#">Read More</a>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class=""><font size="5px"><b>Bank Digitally</b> on the go</font></li>
+    <li class="grey"><img src="images/sh.png"></li>
+  
+  </ul>
+</div>
+
+
+<table border="1" align="center" ><tr><td>
+<footer bgcolor="#333">
+ <div class="container">
+   <div class="row">
+   
+            <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-6 col-xs-12">
+                <ul class="footer-list">
+                     <span>Adress</span>    
+                     <li>
+                        <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+                      </li>
+                           
+                      <li>
+                        <p>+90 1234 56789</p>
+                      </li>
+                           
+                      <li>
+                        <p>info@gmail.com</p>
+                      </li>
+                 </ul>
+            </div>
+             
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                <ul class="footer-list">
+                    <span>Blogs</span>    
+                    <li>
+                        <a href="#">Blog 1</a>
+                    </li>
+                           
+                    <li>
+                        <a href="#">Blog 2</a>
+                    </li>
+                           
+                    <li>
+                       <a href="#">Blog 3</a>
+                    </li>
+                    
+                    <li>
+                       <a href="#">Blog 4</a>
+                    </li>
+                    
+                    <li>
+                       <a href="#">Blog 5</a>
+                    </li>
+                 </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                <ul class="footer-list">
+                    <span>Support</span>    
+                    <li>
+                        <a href="#">Link 1</a>
+                    </li>
+                           
+                    <li>
+                        <a href="#">Link 2</a>
+                    </li>
+                           
+                    <li>
+                       <a href="#">Link 3</a>
+                    </li>
+                    
+                    <li>
+                       <a href="#">Link 4</a>
+                    </li>
+                    
+                    <li>
+                       <a href="#">Link 5</a>
+                    </li>
+                 </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                <ul class="footer-list">
+                    <span>Menu</span>    
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                           
+                    <li>
+                         <a href="#">About</a>
+                    </li>
+                           
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                           
+                    <li>
+                         <a href="#">Gallery </a>
+                    </li>
+                           
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+       
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+               <ul class="social">
+                    <span>Social</span>    
+                    <li>
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                    </li>
+                    
+                    <li>
+                        <a href="#"><i class="fa fa-github fa-2x"></i></a>
+                    </li>
+                            
+                           <li>
+                                <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                           </li>
+                           
+                           <li>
+                                <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+                           </li>
+                            
+                           <li>
+                                <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                          </li>
+                          
+                 </ul>
+           </div>
+       
+       
+       </div> 
+    </div>
+</footer>
+</td></tr></table>
+</body>
+</html>
